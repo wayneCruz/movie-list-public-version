@@ -1,0 +1,80 @@
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  color: #e7dede;
+  background-color: #2c412c;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container p strong {
+  cursor: pointer;
+}
+
+.footer-container p strong:hover {
+  text-decoration: underline;
+}
+
+.dev-account-container p {
+  text-wrap: nowrap;
+}
+
+.dev-account-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.account-link img{
+  width: 1.5rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.account-link img:hover {
+  opacity: 0.5;
+  background-color: #8b948b;
+  border-radius: 50%;
+}
+
+.account-icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+.account-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits-container {
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dev-account-container  {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+    font-size: 0.5rem;
+    padding: 0 2rem;
+  }
+
+  .account-link img{
+    width: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .credits-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
